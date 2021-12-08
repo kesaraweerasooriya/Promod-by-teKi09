@@ -1,0 +1,127 @@
+/*
+  Copyright (c) 2009-2017 Andreas Göransson <andreas.goransson@gmail.com>
+  Copyright (c) 2009-2017 Indrek Ardel <indrek@ardel.eu>
+
+  This file is part of Call of Duty 4 Promod.
+
+  Call of Duty 4 Promod is licensed under Promod Modder Ethical Public License.
+  Terms of license can be found in LICENSE.md document bundled with the project.
+*/
+
+#include "ui/menudef.h"
+{
+	menuDef
+	{
+		name			"connect"
+		style			WINDOW_STYLE_FILLED
+		fullScreen		MENU_FALSE
+		focusColor		COLOR_FOCUSED
+		visible			MENU_FALSE
+		backcolor		1 1 1 1
+		background		"$levelBriefing"
+		rect			FULLSCREEN_WIDE
+		
+		itemDef
+		{
+			rect			128 20 200 100 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			background		"clan_logo"
+			visible 		1
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			-128 -40 260 4 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			107 0
+			backcolor		0 0 0 0.8
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			name			"loadbar"
+			style			WINDOW_STYLE_LOADBAR
+			rect			-127 -39 258 2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			107 0
+			background		"white"
+			visible			1
+			decoration
+		}
+		
+		itemDef 
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 8 100 90 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			background		"gradient_fadein"
+			forecolor		0 0.54 1 0.5
+			visible			1	
+		}
+
+		itemDef
+		{
+			rect			90 30 0 0 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			text			"COD4:MW ^5PROMOD"
+			textfont		UI_FONT_DEFAULT
+			textscale		0.3
+			textalign		ITEM_ALIGN_RIGHT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			forecolor		1 1 1 1
+			visible 		1
+			decoration 
+		}
+
+		itemDef
+		{
+			rect			90 45 0 0 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			text			"LICENCE TO : ^5PUBLIC"
+			textfont		UI_FONT_DEFAULT
+			textscale		0.3
+			textalign		ITEM_ALIGN_RIGHT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			forecolor		1 1 1 1
+			visible 		1
+			decoration 
+			
+		}
+
+		itemDef
+		{
+			rect			90 60 0 0 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			text			"MOD BY :^5 TEKI09"
+			textfont		UI_FONT_DEFAULT
+			textscale		0.3
+			textalign		ITEM_ALIGN_RIGHT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			forecolor		1 1 1 1
+			visible 		1
+			decoration 
+		}
+		
+		itemDef
+		{
+			rect			90 75 0 0 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			text			"FB: ^5TEKI09"
+			textfont		UI_FONT_DEFAULT
+			textscale		0.3
+			textalign		ITEM_ALIGN_RIGHT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			forecolor		1 1 1 1
+			visible 		1
+			decoration 
+		}
+				itemDef
+		{
+			rect			90 90 0 0 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			text			"VERSION:^5 EXP"
+			textfont		UI_FONT_DEFAULT
+			textscale		0.3
+			textalign		ITEM_ALIGN_RIGHT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			forecolor		1 1 1 1
+			visible 		1
+			decoration 
+		}
+	}
+}
